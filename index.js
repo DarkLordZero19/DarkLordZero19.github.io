@@ -29,5 +29,10 @@ function win(){
     h1.textContent="С ДР ЕГОРКА!";
     h1.style.fontSize="100px";
     h1.style.height="100vh";
+    const h2 = document.createElement('h2')
+    const body = document.querySelector('body');
+    h2.textContent="Начать заново";
+    body.appendChild(h2);
+    h2.addEventListener('click',()=>{location.reload()});
 }
 
